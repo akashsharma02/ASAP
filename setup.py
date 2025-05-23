@@ -1,11 +1,11 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='asap',
-    version='0.0.1',
+    name="asap",
+    version="0.0.1",
     license="BSD-3-Clause",
     packages=find_packages(),
-    description='ASAP: ligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills',
+    description="ASAP: ligning Simulation and Real-World Physics for Learning Agile Humanoid Whole-Body Skills",
     url="https://github.com/LeCAR-Lab/ASAP",  # Update this with your actual repository URL
     python_requires=">=3.8",
     install_requires=[
@@ -30,6 +30,7 @@ setup(
         "easydict",
         "lxml",
         "numpy-stl",
-        "open3d"
-    ]
+        "open3d",
+    ],
 )
+

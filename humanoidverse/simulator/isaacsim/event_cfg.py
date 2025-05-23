@@ -1,11 +1,10 @@
+from isaaclab.managers import EventTermCfg as EventTerm
 
-from omni.isaac.lab.managers import EventTermCfg as EventTerm
-
-from omni.isaac.lab.managers import SceneEntityCfg
-from omni.isaac.lab.utils import configclass
+from isaaclab.managers import SceneEntityCfg
+from isaaclab.utils import configclass
 
 
-import omni.isaac.lab.envs.mdp as mdp
+import isaaclab.envs.mdp as mdp
 
 # @configclass
 # class EventCfg:
@@ -20,7 +19,7 @@ import omni.isaac.lab.envs.mdp as mdp
 #             "operation": "scale",
 #         },
 #     )
-    
+
 #     random_joint_friction = EventTerm(
 #         func=mdp.randomize_joint_parameters,
 #         mode="startup",
@@ -31,11 +30,10 @@ import omni.isaac.lab.envs.mdp as mdp
 #         },
 #     )
 
+
 @configclass
 class EventCfg:
     """Configuration for events."""
+
     scale_body_mass = None
     random_joint_friction = None
-    
-
-    
